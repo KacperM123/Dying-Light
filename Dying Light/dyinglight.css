@@ -1,0 +1,224 @@
+@media print {
+    header, #gora, nav, .guzik {
+        display: none;
+    }
+    main {
+        margin: 0;
+    }
+    h1, h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@keyframes czcionka{
+    0% { font-family: helpme;}
+    50% { font-family: DyingLight; }
+    100% { font-family: helpme; }
+}
+@keyframes tlo {
+    0% { background-image: url("OBRAZY/tlo.jpg"); }
+    50% { background-image: url("OBRAZY/tlo2.jpg"); }
+    100% { background-image: url("OBRAZY/tlo.jpg"); }
+}
+@font-face {
+    font-family: "helpme";
+    src: url("FONTY/HelpMe.ttf");
+}
+@font-face {
+    font-family: "DyingLight";
+    src: url("FONTY/AlegreyaSans-Bold.otf");
+  }
+html{
+    scroll-behavior: smooth;
+}  
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    animation-name: tlo;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+h1, h2 {
+    text-align: center;
+    font-size: 30px;
+}
+section{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+audio {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 6%;
+    opacity: 0.3;
+}
+.fabula p{
+    font-family: "DyingLight", sans-serif;
+    font-size: 20px;
+}
+.coto h2{
+    animation-name: czcionka;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.coto p>a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.coto p>a:hover{
+    text-decoration: underline;
+    font-size: 22px;
+}
+header {
+    background-color: rgba(4,4,4,255);
+    padding: 0.5%;
+    text-align: center;
+}
+header img{
+    width: 4%;
+    height: auto; 
+    position: relative;
+    bottom: 10px;
+}
+.wideo video{
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+    padding: 0.5%;
+    border: 2px solid #ccc;
+}
+.wideo{
+    padding: 0.5%;
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box
+    
+}
+.galeriaa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.galeriaa img{
+    float: left;
+    width: 17%;
+    height: auto;
+    transition: transform 0.2s ease-in-out; 
+    margin: 10px;
+    border: 5px white solid;
+
+}
+.galeriaa img:hover{
+    transform: scale(1.3);
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+
+} 
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.5s all ease-in
+    
+}
+
+nav a:hover {
+    color: #f00;
+    text-decoration: underline;
+    transform: scale(1.5);
+    font-size: 24px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.guzik img{
+    width: 60%;
+    height: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+}
+.guzik{
+    overflow: hidden;
+    left: 85%;
+    top: 80%;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.5s all ease-in
+}
+.guzik:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#gora{
+    position: absolute;
+    top: 0;
+}
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(59,59,59,255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+input[type="submit"]{
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
